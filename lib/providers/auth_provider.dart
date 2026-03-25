@@ -56,10 +56,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
 }
 
 final apiServiceProvider = Provider<ApiService>((ref) {
-  final api = ApiService();
-  // Configuration IP locale pour communication native avec backend
-  api.updateBaseUrl('192.168.5.178', port: '3000');
-  return api;
+  return ApiService();
 });
 
 final authServiceProvider = Provider<AuthService>((ref) {

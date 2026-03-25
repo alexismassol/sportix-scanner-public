@@ -25,7 +25,7 @@ class _CreditScannerScreenState extends ConsumerState<CreditScannerScreen> {
 
     try {
       final scanService = ref.read(scanServiceProvider);
-      final result = await scanService.scanCredit(qrCode, amount: _amount);
+      final result = await scanService.scanCredit(qrCode, debitAmount: _amount);
       setState(() {
         _lastResult = result;
         _scanning = false;

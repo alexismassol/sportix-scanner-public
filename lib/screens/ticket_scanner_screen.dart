@@ -74,7 +74,7 @@ class _TicketScannerScreenState extends ConsumerState<TicketScannerScreen> {
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'Pointez la caméra vers le billet',
+                    'Sélectionnez un scénario ci-dessous',
                     style: TextStyle(fontSize: 12, color: SportixColors.textTertiary),
                   ),
                 ],

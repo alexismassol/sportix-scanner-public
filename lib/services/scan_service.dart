@@ -22,10 +22,10 @@ class ScanService {
     return result;
   }
 
-  Future<ScanResult> scanCredit(String qrCode, {double? amount, String? eventId}) async {
+  Future<ScanResult> scanCredit(String qrCode, {double? debitAmount, String? eventId}) async {
     final response = await _api.post(ApiConfig.scanCreditEndpoint, data: {
       'qrCode': qrCode,
-      'amount': amount,
+      'debitAmount': debitAmount,
       'eventId': eventId,
     });
 
