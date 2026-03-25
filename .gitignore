@@ -1,0 +1,70 @@
+# ============================================
+# .gitignore — Sportix Scanner Public Demo
+# ============================================
+
+# === Flutter/Dart ===
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# === IDE ===
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Android ===
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/local.properties
+android/key.properties
+android/app/*.keystore
+android/app/*.jks
+android/app/google-services.json
+
+# === iOS ===
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Runner.xcworkspace/xcshareddata/
+ios/Runner.xcodeproj/xcshareddata/
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/AuthKey_*.p8
+ios/*.mobileprovision
+ios/ExportOptions.plist
+
+# === Signing & secrets ===
+*.p8
+*.p12
+*.mobileprovision
+*.keystore
+*.jks
+key.properties
+google-services.json
+GoogleService-Info.plist
+
+# === Coverage & tests ===
+coverage/
+test-results/
+
+# === Logs ===
+*.log
+
+# === Misc ===
+.cache/
+tmp/
+pubspec.lock
