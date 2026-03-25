@@ -47,6 +47,11 @@ ios/AuthKey_*.p8
 ios/*.mobileprovision
 ios/ExportOptions.plist
 
+# === Environment & secrets ===
+.env
+.env.*
+!.env.example
+
 # === Signing & secrets ===
 *.p8
 *.p12
@@ -68,3 +73,6 @@ test-results/
 .cache/
 tmp/
 pubspec.lock
+
+# === Dev/test scripts ===
+test_connection.dart

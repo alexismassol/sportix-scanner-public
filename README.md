@@ -102,8 +102,7 @@ sportix-scanner-public/
 │   ├── providers/    # State management (Riverpod)
 │   ├── screens/      # Écrans de l'application
 │   └── widgets/      # Widgets réutilisables
-├── test/             # Tests unitaires & widget
-├── integration_test/ # Tests d'intégration
+├── test/             # Tests unitaires, widget, intégration & V&V
 ├── assets/           # Polices Poppins
 └── docs/             # Spécifications
 ```
@@ -122,7 +121,7 @@ flutter test
 flutter test test/vv/
 
 # Tests d'intégration (nécessite un émulateur/device)
-flutter test integration_test/
+flutter test test/integration/
 
 # Lint / analyse statique
 dart analyze
@@ -134,9 +133,11 @@ dart analyze
 
 L'application Flutter communique avec le backend `sportix-public` via :
 - **POST** `/api/auth/login` — Authentification
+- **GET** `/api/auth/me` — Récupération du profil connecté
 - **GET** `/api/events` — Liste des événements
 - **POST** `/api/scan/ticket` — Validation d'un billet
 - **POST** `/api/scan/credit` — Débit de crédits buvette
+- **GET** `/api/stats` — Statistiques globales (accueil scanner)
 
 Le flux complet :
 1. Login avec le compte club
@@ -174,7 +175,7 @@ Le thème reprend les tokens Sport IX :
 
 ---
 
-## 👤 Auteur
+## Auteur
 
 **Alexis MASSOL**
 - Développeur Full Stack & Mobile

@@ -7,7 +7,7 @@ sportix-scanner-public/
 ├── ARBORESCENCE.md                    # Ce fichier
 ├── LICENSE                            # Licence propriétaire (Alexis MASSOL)
 ├── .gitignore                         # Fichiers ignorés par Git
-├── pubspec.yaml                       # Dépendances Flutter
+├── pubspec.yaml                       # Dépendances Flutter (flutter, flutter_riverpod, dio)
 ├── analysis_options.yaml              # Règles de lint Dart
 │
 ├── docs/                              # Documentation
@@ -55,6 +55,4 @@ sportix-scanner-public/
 │   │   └── full_flow_test.dart        # Test d'intégration complet
 │   └── vv/
 │       └── cross_flow_vv_test.dart    # Tests V&V (validation & vérification)
-│
-└── integration_test/                  # Tests d'intégration Flutter (device)
 ```

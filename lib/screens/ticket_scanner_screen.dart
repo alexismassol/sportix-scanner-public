@@ -50,7 +50,7 @@ class _TicketScannerScreenState extends ConsumerState<TicketScannerScreen> {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            // Camera placeholder
+            // Zone de simulation démo (scan via boutons de scénarios)
             Container(
               height: 280,
               width: double.infinity,
