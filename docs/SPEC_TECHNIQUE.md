@@ -94,11 +94,13 @@ class Event {
   final String id;
   final String title;
   final String sportType;
-  final DateTime date;
+  final String date;        // ISO 8601 string (ex: "2026-04-15T20:00:00Z")
   final String location;
   final String clubName;
   final int ticketsSold;
   final int maxCapacity;
+  final double price;
+  final String status;      // 'upcoming' | 'live' | 'completed'
 }
 ```
 
@@ -106,12 +108,16 @@ class Event {
 
 ```dart
 class ScanResult {
-  final String ticketId;
-  final String status;      // 'valid' | 'already_scanned' | 'refunded' | 'invalid'
+  final String status;      // 'valid' | 'already_scanned' | 'refunded' | 'invalid' | 'insufficient'
   final String message;
-  final DateTime scannedAt;
+  final String? ticketId;
   final String? holderName;
   final String? seatInfo;
+  final String? scannedAt;
+  final double? previousBalance;
+  final double? newBalance;
+  final double? amount;
+  final DateTime timestamp; // généré localement au moment du scan
 }
 ```
 
@@ -136,8 +142,9 @@ Client HTTP centralisé (Dio) :
 
 ### 5.3 ScanService
 
-- `scanTicket(qrData, eventId)` → ScanResult
-- `scanCredit(qrData, eventId)` → ScanResult
+- `scanTicket(qrCode, {eventId})` → ScanResult
+- `scanCredit(qrCode, {debitAmount, eventId})` → ScanResult
+- Historique en mémoire des scans de la session
 - Scénarios de démonstration intégrés (sans caméra)
 
 ---
@@ -181,10 +188,10 @@ class SportixColors {
 
 ```dart
 class SportixGlass {
-  static BoxDecoration get cardDecoration => BoxDecoration(
-    color: Colors.white.withOpacity(0.10),
+  static BoxDecoration get card => BoxDecoration(
+    color: Colors.white.withValues(alpha: 0.10),
     borderRadius: BorderRadius.circular(16),
-    border: Border.all(color: Colors.white.withOpacity(0.10)),
+    border: Border.all(color: Colors.white.withValues(alpha: 0.10)),
   );
 }
 ```
@@ -204,7 +211,7 @@ class SportixGlass {
 - **Widgets** : rendu, interactions, états visuels
 - **Screens** : navigation, formulaires
 
-### 8.3 Tests d'intégration (`integration_test/`)
+### 8.3 Tests d'intégration (`test/integration/`)
 
 - Parcours complet : login → sélection event → scan → résultat
 

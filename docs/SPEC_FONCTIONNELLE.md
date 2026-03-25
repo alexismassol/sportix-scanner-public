@@ -122,9 +122,9 @@ L'application Flutter et le site web `sportix-public` partagent le même backend
 
 ## 6. Gestion hors-ligne
 
-- Les résultats de scan sont cachés localement (Hive)
-- Si le réseau est indisponible, un banner "Hors ligne" s'affiche
-- Les scans sont mis en file d'attente et envoyés à la reconnexion
+> Cette version démo ne gère pas le mode hors-ligne. En cas d'erreur réseau, un message d'erreur s'affiche et un résultat de démonstration local est retourné pour permettre la présentation.
+- Si le réseau est indisponible, un message d'erreur est affiché
+- Un résultat de démonstration local est retourné en fallback
 
 ---
 
