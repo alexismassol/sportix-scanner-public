@@ -167,6 +167,20 @@ Le thème reprend les tokens Sport IX :
 
 ---
 
+## 🔄 Réinitialisation des tickets ET crédits démo
+
+Après avoir scanné des tickets démo depuis Flutter, leur statut change dans le backend (`valid` → `scanned`). Pour réinitialiser :
+
+```bash
+# Dans le dossier sportix-public
+npm run reset:scan              # Réinitialiser les tickets ET crédits démo
+npm run seed                    # Réinitialiser toute la base (complet)
+```
+
+**Utilisation** : Lancez `npm run reset:scan` entre chaque session de test pour pouvoir rescanner les mêmes tickets ET crédits depuis Flutter.
+
+---
+
 ## Documentation
 
 - [Spécification Technique](./docs/SPEC_TECHNIQUE.md)

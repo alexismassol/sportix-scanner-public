@@ -91,25 +91,25 @@ class _TicketScannerScreenState extends ConsumerState<TicketScannerScreen> {
               label: 'Billet valide',
               icon: Icons.check_circle,
               color: SportixColors.success,
-              onTap: _scanning ? null : () => _simulateScan('DEMO-VALID-TICKET'),
+              onTap: _scanning ? null : () => _simulateScan('REVNTy1WQUxJRC1USUNLRVQ='), // Base64 de 'DEMO-VALID-TICKET'
             ),
             _DemoButton(
               label: 'Déjà scanné',
               icon: Icons.warning_amber,
               color: SportixColors.warning,
-              onTap: _scanning ? null : () => _simulateScan('DEMO-SCANNED-TICKET'),
+              onTap: _scanning ? null : () => _simulateScan('REVNTy1TQ0FOTkVELVRJQ0tFVA=='), // Base64 de 'DEMO-SCANNED-TICKET'
             ),
             _DemoButton(
               label: 'Billet remboursé',
               icon: Icons.cancel,
               color: SportixColors.error,
-              onTap: _scanning ? null : () => _simulateScan('DEMO-REFUNDED-TICKET'),
+              onTap: _scanning ? null : () => _simulateScan('REVNTy1SRUZVTkRFRC1USUNLRVQ='), // Base64 de 'DEMO-REFUNDED-TICKET'
             ),
             _DemoButton(
               label: 'QR invalide',
               icon: Icons.block,
               color: SportixColors.textTertiary,
-              onTap: _scanning ? null : () => _simulateScan('DEMO-INVALID-TICKET'),
+              onTap: _scanning ? null : () => _simulateScan('SUJQRUNtRVZFTlRfUExBTk5FRA=='), // Base64 de 'INVALID-TICKET'
             ),
             const SizedBox(height: 24),
 

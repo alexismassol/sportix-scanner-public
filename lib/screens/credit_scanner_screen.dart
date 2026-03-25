@@ -125,7 +125,7 @@ class _CreditScannerScreenState extends ConsumerState<CreditScannerScreen> {
               label: 'Paiement réussi',
               icon: Icons.check_circle,
               color: SportixColors.success,
-              onTap: _scanning ? null : () => _simulateScan('DEMO-CREDIT-OK'),
+              onTap: _scanning ? null : () => _simulateScan('REVNTy1DUkVESVQtT0s='), // Base64 de 'DEMO-CREDIT-OK'
             ),
             _DemoButton(
               label: 'Solde insuffisant',
@@ -133,14 +133,14 @@ class _CreditScannerScreenState extends ConsumerState<CreditScannerScreen> {
               color: SportixColors.warning,
               onTap: _scanning ? null : () {
                 setState(() => _amount = 100);
-                _simulateScan('DEMO-CREDIT-LOW');
+                _simulateScan('REVNTy1DUkVESVQtTE9X'); // Base64 de 'DEMO-CREDIT-LOW'
               },
             ),
             _DemoButton(
               label: 'QR invalide',
               icon: Icons.block,
               color: SportixColors.error,
-              onTap: _scanning ? null : () => _simulateScan('DEMO-CREDIT-INVALID'),
+              onTap: _scanning ? null : () => _simulateScan('Q1JFSURUQ1JFQRlWRU5U'), // Base64 de 'CREDIT-INVALID'
             ),
             const SizedBox(height: 24),
 
