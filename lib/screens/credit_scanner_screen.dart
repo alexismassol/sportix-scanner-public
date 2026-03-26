@@ -33,12 +33,8 @@ class _CreditScannerScreenState extends ConsumerState<CreditScannerScreen> {
     } catch (e) {
       setState(() {
         _lastResult = ScanResult(
-          status: 'valid',
-          message: '${_amount.toStringAsFixed(2)}€ débités avec succès',
-          holderName: 'Jean Dupont',
-          previousBalance: 45.50,
-          newBalance: 45.50 - _amount,
-          amount: _amount,
+          status: 'invalid',
+          message: 'Erreur de connexion au serveur',
         );
         _scanning = false;
       });

@@ -32,10 +32,8 @@ class _TicketScannerScreenState extends ConsumerState<TicketScannerScreen> {
     } catch (e) {
       setState(() {
         _lastResult = ScanResult(
-          status: 'valid',
-          message: 'Entrée autorisée — bienvenue !',
-          holderName: 'Jean Dupont',
-          seatInfo: 'Tribune A — Rang 5, Place 12',
+          status: 'invalid',
+          message: 'Erreur de connexion au serveur',
         );
         _scanning = false;
       });

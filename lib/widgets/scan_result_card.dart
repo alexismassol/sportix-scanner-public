@@ -104,6 +104,7 @@ class ScanResultCard extends StatelessWidget {
       case 'valid': return SportixColors.success;
       case 'already_scanned': return SportixColors.warning;
       case 'insufficient': return SportixColors.warning;
+      case 'refunded': return SportixColors.warning;
       default: return SportixColors.error;
     }
   }
@@ -113,6 +114,7 @@ class ScanResultCard extends StatelessWidget {
       case 'valid': return Icons.check_circle;
       case 'already_scanned': return Icons.warning_amber;
       case 'insufficient': return Icons.account_balance_wallet;
+      case 'refunded': return Icons.undo;
       default: return Icons.cancel;
     }
   }

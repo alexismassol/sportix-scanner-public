@@ -120,8 +120,11 @@ void main() {
         'message': 'Solde insuffisant',
         'currentBalance': 2.0,
         'requiredAmount': 100.0,
+        'holderName': 'Jean Dupont',
       });
       expect(insufficient.isInsufficient, true);
+      expect(insufficient.currentBalance, 2.0);
+      expect(insufficient.requiredAmount, 100.0);
     });
   });
 

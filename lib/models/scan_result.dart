@@ -8,6 +8,8 @@ class ScanResult {
   final double? previousBalance;
   final double? newBalance;
   final double? amount;
+  final double? currentBalance;
+  final double? requiredAmount;
   final DateTime timestamp;
 
   ScanResult({
@@ -20,6 +22,8 @@ class ScanResult {
     this.previousBalance,
     this.newBalance,
     this.amount,
+    this.currentBalance,
+    this.requiredAmount,
     DateTime? timestamp,
   }) : timestamp = timestamp ?? DateTime.now();
 
@@ -34,6 +38,8 @@ class ScanResult {
       previousBalance: (json['previousBalance'] as num?)?.toDouble(),
       newBalance: (json['newBalance'] as num?)?.toDouble(),
       amount: (json['amount'] as num?)?.toDouble(),
+      currentBalance: (json['currentBalance'] as num?)?.toDouble(),
+      requiredAmount: (json['requiredAmount'] as num?)?.toDouble(),
     );
   }
 
@@ -48,6 +54,8 @@ class ScanResult {
       'previousBalance': previousBalance,
       'newBalance': newBalance,
       'amount': amount,
+      'currentBalance': currentBalance,
+      'requiredAmount': requiredAmount,
       'timestamp': timestamp.toIso8601String(),
     };
   }
