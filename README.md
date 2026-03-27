@@ -1,4 +1,9 @@
-# Sportix Scanner — Public Demo
+# Sportix Scanner
+
+![Flutter](https://img.shields.io/badge/Flutter-3.6+-02569B?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.6+-0175C2?logo=dart)
+![Riverpod](https://img.shields.io/badge/State-Riverpod-blue)
+![License](https://img.shields.io/badge/License-Proprietary-red)
 
 **Application mobile Flutter** de scan de billets et crédits pour la plateforme **Sport IX** — développée par **Alexis MASSOL**.
 
