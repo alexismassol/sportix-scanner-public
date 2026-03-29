@@ -5,7 +5,7 @@
 ![Riverpod](https://img.shields.io/badge/State-Riverpod-blue)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
 
-**Application mobile Flutter** de scan de billets et crédits pour la plateforme **Sport IX** — développée par **Alexis MASSOL**.
+**Application mobile Flutter** de scan de billets et crédits pour la plateforme **Sport IX**.
 
 > Scanner QR code en temps réel connecté au backend Sportix pour la validation d'entrées et les paiements buvette.
 
@@ -137,12 +137,12 @@ dart analyze
 ## Connexion avec le backend
 
 L'application Flutter communique avec le backend `sportix-public` via :
-- **POST** `/api/auth/login` — Authentification
-- **GET** `/api/auth/me` — Récupération du profil connecté
-- **GET** `/api/events` — Liste des événements
-- **POST** `/api/scan/ticket` — Validation d'un billet
-- **POST** `/api/scan/credit` — Débit de crédits buvette
-- **GET** `/api/stats` — Statistiques globales (accueil scanner)
+- **POST** `/api/auth/login` - Authentification
+- **GET** `/api/auth/me` - Récupération du profil connecté
+- **GET** `/api/events` - Liste des événements
+- **POST** `/api/scan/ticket` - Validation d'un billet
+- **POST** `/api/scan/credit` - Débit de crédits buvette
+- **GET** `/api/stats` - Statistiques globales (accueil scanner)
 
 Le flux complet :
 1. Login avec le compte club
@@ -196,9 +196,7 @@ npm run seed                    # Réinitialiser toute la base (complet)
 
 ## Auteur
 
-**Alexis MASSOL**
-- Développeur Full Stack & Mobile
-- Créateur de la plateforme Sport IX
+**Alexis MASSOL** - Senior Software Engineer · Embedded Systems & Cloud Platforms
 
 ---
 

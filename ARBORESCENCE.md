@@ -1,4 +1,4 @@
-# Arborescence — Sportix Scanner Public Demo
+# Arborescence - Sportix Scanner Public Demo
 
 ```
 sportix-scanner-public/

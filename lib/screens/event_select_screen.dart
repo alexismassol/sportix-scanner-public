@@ -74,7 +74,7 @@ class _EventSelectScreenState extends ConsumerState<EventSelectScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const SizedBox(height: 4),
-                            Text('${event.sportType} — ${event.location}', style: const TextStyle(
+                            Text('${event.sportType} - ${event.location}', style: const TextStyle(
                               fontSize: 12, color: SportixColors.textTertiary,
                             )),
                             const SizedBox(height: 4),

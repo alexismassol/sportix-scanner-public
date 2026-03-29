@@ -1,4 +1,4 @@
-# Spécification Technique — Sportix Scanner Public Demo
+# Spécification Technique - Sportix Scanner Public Demo
 
 **Version** : 1.0.0
 **Auteur** : Alexis MASSOL

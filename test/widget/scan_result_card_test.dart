@@ -10,7 +10,7 @@ void main() {
         status: 'valid',
         message: 'Entrée autorisée',
         holderName: 'Jean Dupont',
-        seatInfo: 'Tribune A — Rang 5',
+        seatInfo: 'Tribune A - Rang 5',
       );
 
       await tester.pumpWidget(
@@ -24,7 +24,7 @@ void main() {
       expect(find.text('Validé'), findsOneWidget);
       expect(find.text('Entrée autorisée'), findsOneWidget);
       expect(find.text('Jean Dupont'), findsOneWidget);
-      expect(find.text('Tribune A — Rang 5'), findsOneWidget);
+      expect(find.text('Tribune A - Rang 5'), findsOneWidget);
       expect(find.byIcon(Icons.check_circle), findsOneWidget);
     });
 

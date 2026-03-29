@@ -1,12 +1,12 @@
 #!/bin/bash
 # ============================================
-# Run Script — Sportix Scanner Public Demo
+# Run Script - Sportix Scanner Public Demo
 # Lance l'application Flutter avec l'IP du backend
 # ============================================
 
 set -e
 
-echo "📱 Sportix Scanner — Lancement"
+echo "📱 Sportix Scanner - Lancement"
 echo "=============================="
 
 if [ -z "$1" ]; then

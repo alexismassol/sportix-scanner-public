@@ -1,9 +1,9 @@
-// V&V (Validation & Verification) — Flutter Cross-Flow Tests
+// V&V (Validation & Verification) - Flutter Cross-Flow Tests
 //
 // Validates that the Flutter app correctly implements the functional spec:
 // VV-FLUTTER-01: Models serialize/deserialize consistently with API contract
 // VV-FLUTTER-02: Auth state transitions are correct (unauthenticated → loading → authenticated → logout)
-// VV-FLUTTER-03: Theme consistency — all Sportix colors and styles are applied
+// VV-FLUTTER-03: Theme consistency - all Sportix colors and styles are applied
 // VV-FLUTTER-04: Scan result display matches all status types from API
 // VV-FLUTTER-05: API config matches expected backend contract
 import 'package:flutter/material.dart';
@@ -77,10 +77,10 @@ void main() {
       // Valid ticket scan
       final validTicket = ScanResult.fromJson({
         'status': 'valid',
-        'message': 'Entrée autorisée — bienvenue !',
+        'message': 'Entrée autorisée - bienvenue !',
         'ticketId': 'abc',
         'holderName': 'Jean Dupont',
-        'seatInfo': 'Tribune A — Rang 5, Place 12',
+        'seatInfo': 'Tribune A - Rang 5, Place 12',
         'scannedAt': '2026-03-24T09:16:23.803Z',
       });
       expect(validTicket.isValid, true);

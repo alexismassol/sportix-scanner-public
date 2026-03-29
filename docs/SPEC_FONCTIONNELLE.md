@@ -1,4 +1,4 @@
-# Spécification Fonctionnelle — Sportix Scanner Public Demo
+# Spécification Fonctionnelle - Sportix Scanner Public Demo
 
 **Version** : 1.0.0
 **Auteur** : Alexis MASSOL
